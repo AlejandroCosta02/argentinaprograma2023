@@ -1,0 +1,71 @@
+body {
+  background-color: #b1b7b8;
+}
+* {
+  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+.cv {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+.imgProfile {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 15px;
+  margin-bottom: 3%;
+}
+hr {
+  color: #2E3840;
+}
+@media only screen and (max-width: 576px){
+    .imgProfile{
+        height: 200px;
+        width: auto;
+        border-radius: 50%;
+    }
+}
+.sinMargen {
+  margin: 0;
+  font-weight: 600;
+}
+.progress-bar-primary {
+  background-color: #F55050;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+ul li::before {
+  content: "\f14a";
+  font-family: "Font Awesome 5 Free";
+  padding: 0 10px 0 0;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.btn:hover {
+  color: #2E3840;
+  background-color: white;
+}
+
+.subtitle {
+  border-bottom: 3px solid #0E8388;
+}
+.contacto:hover {
+  background-color: #0E8388;
+  border: none;
+}
+
+
+/* contacto */
+.principal {
+  max-width: 75%;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "practico_final_programar4.0.2023",
+  "version": "1.0.0",
+  "description": "cv practico final costa claudio alejandro ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "costa claudio alejandro DNI 36801951",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha1"
+  }
+}

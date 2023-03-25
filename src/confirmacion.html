@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="main.css" />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- CSS -->
+    <title>Costa_alejandro_DNI36801951</title>
+  </head>
+  <body class="bg-primary">
+    <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center" >
+      <div class="card bg-success text-white" style="width: 18rem; box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+        <div class="card-body">
+          <h5 class="card-title">Tu mensuaje fue enviado Correctamente</h5>
+          <p class="card-text">
+            Lo contactaré en breve
+          </p>
+          <p id="counter"></p>
+          <a href="index.html" class="card-link btn btn-info" type="button">Volver</a>
+          <p>&nbsp</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var countDownDate = new Date("Jul 1, 2023 15:37:25").getTime();
+
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("counter").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("counter").innerHTML = "Se termino el tiempo";
+        }
+      }, 1000);
+    </script>
+    <script
+      src="https://kit.fontawesome.com/5ba241b931.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
